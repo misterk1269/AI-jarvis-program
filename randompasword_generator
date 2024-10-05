@@ -1,0 +1,13 @@
+email =(input("enter your email ="))
+print("set your password:")
+import random
+import string
+password_len =12
+random_value = string.ascii_letters+string.digits+string.punctuation
+password = ""
+for  i in range(password_len):
+    password += random.choice(random_value)
+
+print("suggestion -: you can use this password for your account :",password,"\nNote = password should be 12 characters...")
+pas = input("password =")
+print("your email is :",email,"\nyour password is :",pas)
